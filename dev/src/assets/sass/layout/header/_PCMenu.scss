@@ -1,0 +1,97 @@
+@use "../../global" as global;
+.l-PCMenu {
+    width: 450px;
+    height: 100vh;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -350px;
+    z-index: 9;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    transition: all 0.7s cubic-bezier(0.37, 0.58, 0, 1);
+    box-shadow: 5px 0px 28px 3px rgb(0 0 0 / 0%);
+}
+
+
+
+.l-PCMenu.open {
+    left: 0;
+    box-shadow: 5px 0px 30px 3px rgb(0 0 0 / 50%);
+    transition: 0.3s;
+    .l-PCMenu__wrap {
+        color: global.$c--white;
+    }
+
+    .l-PCMenu__list {
+        padding-left: 100px;
+    }
+}
+
+.l-PCMenu__item {
+    font-size: 3.6rem;
+    font-weight: 800;
+    position: relative;
+    padding-left: 50px;
+    opacity: 0;
+
+    a {
+        transition: 0.3s;
+        &:hover {
+            color: global.$c--primary;
+            font-size: 4rem;
+        }
+    }
+
+    &:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        // left: 100%;
+        left: 25px;
+        transition: 0.3s ease-in;
+    }
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.l-PCMenu__item.open {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.l-PCMenu__itemTOP {
+    transition: all 0.4s ease-out 0.25s;
+}
+
+.l-PCMenu__itemSTRONGNESS {
+    transition: all 0.4s ease-out 0.3s;
+}
+
+.l-PCMenu__itemSERVICE {
+    transition: all 0.4s ease-out 0.35s;
+}
+
+.l-PCMenu__itemMEMBERS {
+    transition: all 0.4s ease-out 0.4s;
+}
+
+.l-PCMenu__itemACHIEVEMENT {
+    transition: all 0.4s ease-out 0.45s;
+}
+
+.l-PCMenu__itemCONTACT {
+    transition: all 0.4s ease-out 0.5s;
+}
+

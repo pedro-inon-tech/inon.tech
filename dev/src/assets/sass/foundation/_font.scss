@@ -1,0 +1,29 @@
+
+$noto: "Noto Sans JP", sans-serif;
+$jacques: "Jacques Francois Shadow", cursive;
+$aviano: aviano-future, sans-serif;
+
+@font-face {
+    font-family: 'Jacques Francois Shadow';
+    src: url('../') format("truetype");
+ }
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../../font/NotoSansJP-Bold.otf') format("truetype");
+ }
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../../font/NotoSansJP-Regular.otf') format("truetype");
+ }
+
+.--noto{
+    font-family: $noto;
+}
+
+.--jacques{
+    font-family: $jacques;
+}
+
+.--aviano{
+    font-family: $aviano;
+}

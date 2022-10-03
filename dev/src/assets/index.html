@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- <meta name="robots" content="noindex">
+	<meta name="robots" content="nofollow"> -->
+	<title>inon.tech</title>
+
+	<!--ファビコンの設定-->
+	<link href="./img/favicon.ico" rel="icon">
+	<!--jQueryの読み込み-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--wow-js-->
+	<script src="/js/wow.min.js"></script>
+	<!--wow-js-->
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
+	<!--slick-js-->
+	<script src="./js/slick.min.js"></script>
+	<!--modernizr-custom-js-->
+	<script type="text/javascript" src="./js/modernizr-custom.min.js"></script>
+	<!--myscript-js-->
+	<script type="text/javascript" src="./js/script.min.js"></script>
+	<!--リセットcssの読み込み-->
+	<link rel="stylesheet" href="./css/reset.css">
+	<!-- animate.css Animate -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- adobe font -->
+	<link rel="stylesheet" href="https://use.typekit.net/eoa4twy.css">
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Noto+Sans+JP:wght@300;400;700;900&display=swap"
+		rel="stylesheet">
+	<!--slick-css-->
+	<link rel="stylesheet" href="./css/slick.css" />
+	<!--slick-theme-css-->
+	<link rel="stylesheet" href="./css/slick-theme.css" />
+	<!--独自スタイルの読み込み-->
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+	<header class="l-header">
+		<div class="l-headerPC" id="menubar">
+
+			<div class="l-headerPC__bar">
+				<a class="l-headerPC__logo" href="">
+					<picture>
+						<source srcset="./img/header-pc-logo.webp" type="image/webp" alt="">
+						<img src="./img/header-pc-logo.png" alt="INONロゴ">
+					</picture>
+
+				</a>
+
+				<div class="l-headerPC__menuTrigger">
+					<a class="l-headerPC__menuBtn">
+						<span></span>
+					</a>
+				</div>
+
+				<a class="l-headerPC__contactBtn" href="#menuCONTACT">
+					<picture>
+						<source srcset="./img/contact-red.webp" type="image/webp" alt="コンタクトイラスト">
+						<img src="./img/contact-red.png" alt="コンタクトイラスト">
+					</picture>
+
+				</a>
+
+			</div>
+
+			<div class="l-PCMenu">
+				<div class="l-PCMenu__wrap">
+					<ul class="l-PCMenu__list --noto">
+						<li class="l-PCMenu__item l-PCMenu__itemTOP"><a class="" href="#menuTOP">TOP</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemSTRONGNESS"><a href="#menuSTRENGTH">STRENGTH</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemSERVICE"><a href="#menuSERVICE">SERVICE</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemMEMBERS"><a href="#menuMEMBERS">MEMBERS</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemACHIEVEMENT"><a href="#menuWORKS">WORKS</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemCONTACT"><a href="#menuCONTACT">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="l-headerSP" id="menubar">
+
+			<div class="l-headerSP__bar">
+				<nav class="dc-menu">
+					<a class="dc-menu-trigger"><span></span></a>
+					<a class="l-headerSP__logo" href="">
+						<picture>
+							<source srcset="./img/header-logo-sp.webp" type="header-logo-sp.webp" alt="INONロゴ">
+							<img src="./img/header-logo-sp.png" alt="INONロゴ">
+						</picture>
+
+					</a>
+					<div class="menu-overlay --noto">
+						<ul>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuTOP">TOP</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuSTRENGTH">STRENGTH</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuSERVICE">SERVICE</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuMEMBERS">MEMBERS</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuWORKS">WORKS</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuCONTACT">CONTACT</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="loader">
+		<video loop playsinline muted autoplay preload="metadata">
+			<source src="./img/inon.tech-loading.mov" type="video/mp4">
+		</video>
+
+		<div class="loader__logo">
+			<picture>
+				<source srcset="./img/header-pc-logo.webp" type="image/webp" alt="INONロゴ">
+				<img src="./img/header-pc-logo.png" alt="INONロゴ">
+			</picture>
+		</div>
+	</div>
+
+	<main class="front">
+		<!-- 修正があるため飛ばす。セクションーファーストビュー -->
+		<section class="p-frontFirstView" id="menuTOP">
+
+			<div class="p-front__video">
+				<video loop playsinline muted autoplay preload="metadata">
+					<source src="./img/bg-video.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="p-front__PCmask">
+				<picture>
+					<source srcset="./img/firstview-pc-mask.webp" type="image/webp" alt="ファーストビュー">
+					<img src="./img/firstview-pc-mask.png" alt="ファーストビュー">
+				</picture>
+			</div>
+
+			<div class="p-front__SPmask">
+				<picture>
+					<source srcset="./img/firstview-sp-mask.webp" type="image/webp" alt="ファーストビュー">
+					<img src="./img/firstview-sp-mask.png" alt="ファーストビュー">
+				</picture>
+			</div>
+		</section>
+
+		<div class="p-frontFirstView__name wow animate__animated animate__fadeIn animate__slow" data-wow-delay="3s">
+			<p class="--aviano">
+				<span>I</span>T'S<br>
+				<span>N</span>OW<br>
+				<span>O</span>R<br>
+				<span>N</span>EVER
+			</p>
+		</div>
+
+		<!-- <a href="#cont-wwa">
+      <div class="p-frontFirstView__PCscroll scrl">
+        <span></span>
+        <p>NEXT</p>
+        <span></span>
+      </div>
+    </a> -->
+
+		<!-- セクションーファーストビュー(終了) -->
+
+		<section class="p-frontLogo" id="cont-wwa">
+			<div class="p-frontLogo__listWrap">
+
+				<div class="p-frontLogo__list slick-slider">
+					<div class="slick-list">
+						<div class="slick-track --topSlide">
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-1.webp" type="image/webp" alt="株式会社 音生ロゴ">
+									<img loading="lazy" src="./img/slider-logo-1.png" alt="株式会社 音生ロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-2.webp" type="image/webp" alt="株式会社塩沢製作所">
+									<img loading="lazy" src="./img/slider-logo-2.png" alt="株式会社塩沢製作所">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-3.webp" type="image/webp" alt="長野システム開発株式会社">
+									<img loading="lazy" src="./img/slider-logo-3.png" alt="長野システム開発株式会社">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-4.webp" type="image/webp" alt="talentxbuzzロゴ">
+									<img loading="lazy" src="./img/slider-logo-4.png" alt="talent x buzzロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-5.webp" type="slider-logo-5.webp" alt="辰野不動産ロゴ">
+									<img loading="lazy" src="./img/slider-logo-5.png" alt="辰野不動産ロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-6.webp" type="image/webp" alt="NEWAGE D.Cロゴ">
+									<img loading="lazy" src="./img/slider-logo-6.png" alt="NEWAGE D.Cロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-7.webp" type="image/webp" alt="株式会社JASHロゴ">
+									<img loading="lazy" src="./img/slider-logo-7.png" alt="株式会社JASHロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-8.webp" type="image/webp" alt="ARTFLAIRロゴ">
+									<img loading="lazy" src="./img/slider-logo-8.png" alt="ARTFLAIRロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-9.webp" type="image/webp"
+										alt="快速楽歩 カンパニー OSADA withロゴ">
+									<img loading="lazy" src="./img/slider-logo-9.png" alt="快速楽歩 カンパニー OSADA withロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-10.webp" type="image/webp" alt="JUN建築設計室ロゴ">
+									<img loading="lazy" src="./img/slider-logo-10.png" alt="JUN建築設計室ロゴ">
+								</picture>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="p-frontLogo__list slick-slider">
+					<div class="slick-list">
+						<div class="slick-track --bottomSlide" dir="rtl">
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-11.webp" type="image/webp" alt="株式会社 アイプラスロゴ">
+									<img loading="lazy" src="./img/slider-logo-11.png" alt="株式会社 アイプラスロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-12.webp" type="image/webp" alt="株式会社 OA推進センターロゴ">
+									<img loading="lazy" src="./img/slider-logo-12.png" alt="株式会社 OA推進センターロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-13.webp" type="image/webp" alt="エキタンロゴ">
+									<img loading="lazy" src="./img/slider-logo-13.png" alt="エキタンロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-14.webp" type="image/webp" alt="BlancQuestロゴ">
+									<img loading="lazy" src="./img/slider-logo-14.png" alt="BlancQuestロゴ">
+								</picture>
+							</div>
+							<!-- <div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-15.webp" type="image/webp"
+										alt="加賀市ロゴ">
+									<img loading="lazy" src="./img/slider-logo-15.png" alt="加賀市ロゴ">
+								</picture>
+							</div> -->
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-16.webp" type="image/webp" alt="黒宮建設ロゴ">
+									<img loading="lazy" src="./img/slider-logo-16.png" alt="黒宮建設ロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-17.webp" type="image/webp" alt="ビリーブロゴ">
+									<img loading="lazy" src="./img/slider-logo-17.png" alt="ビリーブロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-18.webp" type="image/webp" alt="adelie planningロゴ">
+									<img loading="lazy" src="./img/slider-logo-18.png" alt="adelie planningロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-19.webp" type="image/webp" alt="Globe Tailsロゴ">
+									<img loading="lazy" src="./img/slider-logo-19.png" alt="Globe Tailsロゴ">
+								</picture>
+							</div>
+							<div class="slick-slide">
+								<picture>
+									<source loading="lazy" srcset="./img/slider-logo-20.webp" type="image/webp" alt="ホテルweb専門 アデリ〜沖縄ロゴ">
+									<img loading="lazy" src="./img/slider-logo-20.png" alt="ホテルweb専門 アデリ〜沖縄ロゴ">
+								</picture>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="p-frontStrong c--secitonTriangle" id="menuSTRENGTH" data-scroll-container>
+
+			<div class="l-inner">
+				<h2 class="c--sectonTitle --jacques is-inview" data-scroll data-scroll-direction="horizontal"
+					data-scroll-speed="2" data-scroll-target="#organization">
+					STRENGTH
+				</h2>
+
+				<div class="p-frontStrong__list">
+
+					<div class="p-frontStrong__item wow animate__animated animate__fadeIn">
+						<picture>
+							<source loading="lazy" srcset="./img/strongness-01.webp" type="image/webp" alt="ホームページに拘るべき理由">
+							<img loading="lazy" src="./img/strongness-01.png" alt="ホームページに拘るべき理由">
+						</picture>
+
+						<div class="p-frontStrong__itemText --noto">
+							<h3 class="p-frontStrong__itemTitle">ホームページに拘るべき理由</h3>
+							<p class="p-frontStrong__itemDesc">
+								HPは集客ツールです。INONは戦略を持って作るからこそ、他の会社よりも大きくお客様の売り上げに貢献できます。
+							</p>
+						</div>
+					</div>
+					<div class="p-frontStrong__item wow animate__animated animate__fadeIn">
+						<picture>
+							<source loading="lazy" srcset="./img/strongness-02.webp" type="image/webp" alt="業界のプロと共に作り上げるから安心">
+							<img loading="lazy" src="./img/strongness-02.png" alt="業界のプロと共に作り上げるから安心">
+						</picture>
+
+						<div class="p-frontStrong__itemText --noto">
+							<h3 class="p-frontStrong__itemTitle">業界のプロと共に作り上げるから安心</h3>
+							<p class="p-frontStrong__itemDesc">
+								必要なものはお客様と私たちの話す時間のみです。業界のプロがお客様のビジネスの最適な見せ方をご提案します。
+							</p>
+						</div>
+					</div>
+					<div class="p-frontStrong__item wow animate__animated animate__fadeIn">
+						<picture>
+							<source loading="lazy" srcset="./img/strongness-03.webp" type="image/webp" alt="不透明な工程は一切ない">
+							<img loading="lazy" src="./img/strongness-03.png" alt="不透明な工程は一切ない">
+						</picture>
+						<div class="p-frontStrong__itemText --noto">
+							<h3 class="p-frontStrong__itemTitle">不透明な工程は一切ない</h3>
+							<p class="p-frontStrong__itemDesc">
+								工程管理の質を担保するチェックシートを公開することで、自分のHPができていくのを実感できる
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p-frontService  c--secitonTriangle__reverse" id="menuSERVICE">
+
+			<div class="l-inner p-frontService__inner">
+				<h2 class="c--sectonTitle --jacques">
+					SERVICE
+				</h2>
+				<div class="p-frontService__text --noto">
+					<p>
+						私たちは<br>
+						PR会社であり、<br>
+						広告会社であり、<br>
+						クリエイティブ会社です。<br>
+						その全ての強さを掛け合わせ、デジタルと<br>
+						リアルを越境し、エンターテインメントの新しい価値を<br>
+						創造します。
+					</p>
+				</div>
+			</div>
+			<div class="p-frontServiceMain bg-lazy">
+				<div class="l-inner">
+					<h3 class="p-frontServiceMain__title --noto">
+						WEB/EC制作<br>
+						<span>サービスの流れ</span>
+					</h3>
+					<div class="p-frontServiceMain__list wow animate__animated animate__fadeIn">
+
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>1</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								プロジェクト設計
+								<ul>
+									<li>・WBS作成</li>
+									<li>・制作要件整理</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>2</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								戦略
+								<ul>
+									<li>・ビジネスモデルの整理</li>
+									<li>・KPI・サイトの目標設定</li>
+									<li>・コンセプト策案</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>3</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								設計
+								<ul>
+									<li>・サイトのサイトマップの作成</li>
+									<li>・ワイヤーフレーム作成</li>
+									<li>・SEO対策を行うキーワードの選定</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>4</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								デザイン
+								<ul>
+									<li>・ベンチマーク競合サイト分析</li>
+									<li>・CIに基づいたデザイン設計</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>5</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								開発
+								<ul>
+									<li>・PJに適した開発規則の選定</li>
+									<li>・開発・サーバー環境構築</li>
+									<li>・SEO対策（ SSL・<br>
+										　構造化データの実装 など）</li>
+									<li>・解析設定</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>6</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								テストリリース
+								<ul>
+									<li>・表示テスト・挙動テスト</li>
+									<li>・ドキュメントの作成</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ここからはspの記述です -->
+				<!-- ここからはspの記述です -->
+				<!-- ここからはspの記述です -->
+				<div class="p-frontServiceMainSP__list service-slick wow animate__animated animate__fadeIn">
+					<div class="service-slider">
+
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>1</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								プロジェクト設計
+								<ul>
+									<li>・WBS作成</li>
+									<li>・制作要件整理</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>2</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								戦略
+								<ul>
+									<li>・ビジネスモデルの整理</li>
+									<li>・KPI・サイトの目標設定</li>
+									<li>・コンセプト策案</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>3</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								設計
+								<ul>
+									<li>・サイトのサイトマップの作成</li>
+									<li>・ワイヤーフレーム作成</li>
+									<li>・SEO対策を行うキーワードの選定</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="service-slider">
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>4</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								デザイン
+								<ul>
+									<li>・ベンチマーク競合サイト分析</li>
+									<li>・CIに基づいたデザイン設計</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>5</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								開発
+								<ul>
+									<li>・PJに適した開発規則の選定</li>
+									<li>・開発・サーバー環境構築</li>
+									<li>・SEO対策（ SSL・<br>
+										　構造化データの実装 など）</li>
+									<li>・解析設定</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>6</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								テストリリース
+								<ul>
+									<li>・表示テスト・挙動テスト</li>
+									<li>・ドキュメントの作成</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</section>
+		<section class="p-frontMembers" id="menuMEMBERS">
+
+			<div class="l-inner">
+				<h2 class="p-fronttMembers__titleEn  c--sectonTitle --jacques">
+					MEMBERS
+				</h2>
+			</div>
+
+			<div class="p-frontMembersPC  --noto">
+				<div class="p-frontMembersBottom wow animate__animated animate__fadeInRight">
+					<div class="l-inner p-frontMembers__inner">
+						<div class="p-frontMembersBottom__left">
+							<div class="p-frontMembers__enName">
+								Pedro Tadano
+							</div>
+
+							<div class="p-frontMembers__jpName">
+								CEO
+							</div>
+							<div class="p-frontMembers__desc">
+								Web領域を用いてお客様の売上の向上を追求し、いいお店がより広く知られるよう、数々のWeb会社で得た知見を活かします。
+							</div>
+
+							<!-- <div class="p-frontMembers__sns">
+								<a
+									href="https://www.facebook.com/people/%E5%8F%AA%E9%87%8E-%E3%83%9A%E3%83%89%E3%83%AD/100080979130210/">
+									<img src="./img/facebook.svg" class="fab fa-facebook"></a>
+								<a href="https://twitter.com/pedro_inon"><img src="./img/twitter.svg" class="fab fa-twitter"></a>
+								<a href="https://www.linkedin.com/in/%E3%83%9A%E3%83%89%E3%83%AD-%E5%8F%AA%E9%87%8E-8787b9249/"><img
+										src="./img/linkedin.svg" class="fab fa-linkedin"></a>
+							</div> -->
+						</div>
+						<div class="p-frontMembersBottom__right">
+							<div class="p-frontMembersBottom__img bg-lazy"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="p-frontMembersTop wow animate__animated animate__fadeInLeft">
+					<div class="l-inner p-frontMembers__inner">
+						<div class="p-frontMembersTop__left">
+							<div class="p-frontMembersTop__img bg-lazy"></div>
+						</div>
+						<div class="p-frontMembersTop__right">
+							<div class="p-frontMembers__enName">
+								Kousei Shibata
+							</div>
+
+							<div class="p-frontMembers__jpName">
+								COO
+							</div>
+
+							<div class="p-frontMembers__desc">
+								今まで多くの制作会社様・代理店様の業務経験をもとにお客様の利益を第一に悩み、考えて、ご提案いたします。
+							</div>
+							<!-- <div class="p-frontMembers__sns">
+								<a href="https://www.facebook.com/inon.kousei/photos"><img src="./img/facebook.svg"
+										class="fab fa-facebook"></a>
+								<a href="https://twitter.com/kousei__shibata"><img src="./img/twitter.svg" class="fab fa-twitter"></a>
+								<a href="https://www.linkedin.com/in/%E6%BB%89%E7%94%9F-%E6%9F%B4%E7%94%B0-386976251/"><img
+										src="./img/linkedin.svg" class="fab fa-linkedin"></a>
+							</div> -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-frontMembersSP  --noto">
+
+				<div class="p-frontMembersSPTop wow animate__animated animate__fadeIn">
+					<div class="l-inner p-frontMembersSP__inner">
+						<div class="p-frontMembersSPTop__left">
+							<div class="p-frontMembersSPTop__img bg-lazy"></div>
+						</div>
+						<div class="p-frontMembersSPTop__right">
+							<div class="p-frontMembersSP__enName">
+								ー Tadano Pedro ー
+							</div>
+
+							<div class="p-frontMembersSP__jpName">
+								只野 ペドロ
+							</div>
+
+							<div class="p-frontMembersSP__desc">
+								Webの領域を使ってお客様の売上の向上を追求し、いいお店がより知られるように数々のWeb会社で得た知見を活かします。
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="p-frontMembersSPBottom wow animate__animated animate__fadeIn">
+					<div class="l-inner p-frontMembersSP__inner">
+						<div class="p-frontMembersSPBottom__left">
+							<div class="p-frontMembersSP__enName">
+								ー Shibata Kosei ー
+							</div>
+
+							<div class="p-frontMembersSP__jpName">
+								柴田 滉生
+							</div>
+							<div class="p-frontMembersSP__desc">
+								今まで多くの制作会社様・代理店様の業務経験をもとにお客様の利益を第一に悩み、考えて、ご提案いたします。
+							</div>
+						</div>
+						<div class="p-frontMembersSPBottom__right">
+							<div class="p-frontMembersSPBottom__img bg-lazy"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="p-frontAchieve c--secitonTriangle" id="menuWORKS">
+
+			<!-- <div class="rulers">
+        <div class="rulers__block"></div>
+        <div class="rulers__block"></div>
+        <div class="rulers__block"></div>
+        <div class="rulers__block"></div>
+      </div>
+
+      <div class="rulers">
+        <div class="rulers__line"></div>
+        <div class="rulers__line"></div>
+        <div class="rulers__line"></div>
+        <div class="rulers__line"></div>
+      </div> -->
+
+
+			<div class="l-inner">
+				<h2 class="p-frontAchieve__titleEn c--sectonTitle --jacques">
+					WORKS
+				</h2>
+			</div>
+			<div class="p-frontAchieve__main">
+				<a href="http://www.talentxbuzz.com/"
+					class="p-frontAchieve__topItem wow animate__animated animate__fadeInRight">
+					<div class="p-frontAchieve__title">
+						<picture>
+							<source loading="lazy" srcset="./img/achievement-04.webp" type="image/webp" alt="talentxbuzzロゴ">
+							<img src="./img/achievement-04.png" alt="talentxbuzzロゴ">
+						</picture>
+					</div>
+
+					<div class="p-frontAchieve__wrap --noto">
+						<div class="p-frontAchieve__img" style="order: 2;">
+							<picture>
+								<source loading="lazy" srcset="./img/achievement-03.webp" type="image/webp"
+									alt="talentxbuzzHPの画面のパソコンイラスト">
+								<img src="./img/achievement-03.png" alt="alentxbuzzHPの画面のパソコンイラスト">
+							</picture>
+						</div>
+						<div class="p-frontAchieve__desc --noto">
+							完成イメージや何を載せたいかが全く決まっていない状態で、依頼しました。<br class="achieve-br">
+							それでも丁寧にヒヤリングしてくれたので、途中から自分のほしいものがイメージできて安心してお任せすることができました。
+							依頼してとても良かったです。
+						</div>
+					</div>
+				</a>
+
+				<a href="https://kuromiya.jp/" class="p-frontAchieve__bottomItem wow animate__animated animate__fadeInLeft">
+					<div class="p-frontAchieve__title">
+						<picture>
+							<source loading="lazy" srcset="./img/achievement-02.webp" type="image/webp" alt="黒宮建設ロゴ">
+							<img src="./img/achievement-02.png" alt="黒宮建設ロゴ">
+						</picture>
+					</div>
+
+					<div class="p-frontAchieve__wrap --noto">
+						<div class="p-frontAchieve__img">
+							<picture>
+								<source loading="lazy" srcset="./img/achievement-01.webp" type="image/webp" alt="黒宮建設HPの画面のパソコンイラスト">
+								<img src="./img/achievement-01.png" alt="黒宮建設HPの画面のパソコンイラスト">
+							</picture>
+						</div>
+						<div class="p-frontAchieve__desc --noto">
+							全体的に対応が丁寧でした。初期の段階でどのように進んでいくかを説明してくれたので途中で不安になることもありませんでした。<br class="achieve-br">
+							チェックシートを使ってリアルタイムでどこの工程にいるのか分かりやすかったのが、一番の安心材料でした。本当にありがとうございました。
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="p-frontAchieveSP__main">
+				<div class="l-inner">
+
+					<a href="http://www.talentxbuzz.com/" class="p-frontAchieveSPTop wow animate__animated animate__fadeInRight">
+						<div class="p-frontAchieveSPTOP__left">
+							<div class="p-frontAchieveSPTOP__logo">
+								<picture>
+									<source loading="lazy" srcset="./img/achievement-04.webp" type="image/webp" alt="talentxbuzzロゴ">
+									<img src="./img/achievement-04.png" alt="talentxbuzzロゴ">
+								</picture>
+							</div>
+
+							<div class="p-frontAchieveSPTOP__desc --noto">
+								<p>完成イメージや何を載せたいかが全く決まっていない状態で、依頼しました。
+									それでも、丁寧にヒヤリングしてくれたので、途中から自分のほしいものがイメージできて安心してお任せすることができました。
+									依頼してとても良かったです。
+								</p>
+							</div>
+						</div>
+
+						<div class="p-frontAchieveSPTop__right">
+							<picture>
+								<source loading="lazy" srcset="./img/achievement-sp-01.webp" type="image/webp"
+									alt="talentxbuzzHPの画面のスマホイラスト">
+								<img src="./img/achievement-sp-01.png" alt="talentxbuzzHPの画面のスマホイラスト">
+							</picture>
+						</div>
+					</a>
+
+					<a href="https://kuromiya.jp/" class="p-frontAchieveSPBottom wow animate__animated animate__fadeInLeft">
+						<div class="p-frontAchieveSPBottom__left">
+							<picture>
+								<source loading="lazy" srcset="./img/achievement-sp-02.webp" type="image/webp" alt="黒宮建設HPの画面のスマホイラスト">
+								<img src="./img/achievement-sp-02.png" alt="黒宮建設HPの画面のスマホイラスト">
+							</picture>
+						</div>
+
+						<div class="p-frontAchieveSPBottom__right">
+							<div class="p-frontAchieveSPBottom__logo">
+								<picture>
+									<source loading="lazy" srcset="./img/achievement-02.webp" type="image/webp" alt="黒宮建設ロゴ">
+									<img src="./img/achievement-02.png" alt="黒宮建設ロゴ">
+								</picture>
+							</div>
+							<div class="p-frontAchieveSPBottom__desc --noto">
+								<p>
+									全体的に対応が丁寧でした。初期の段階でどのように進んでいくかを説明してくれたので途中で不安になることもありませんでした。チェックシートを使ってリアルタイムでどこの工程にいるのか分かりやすかったのが、一番の安心材料でした。本当にありがとうございました。
+								</p>
+							</div>
+
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="p-frontContact" id="menuCONTACT">
+			<div class="l-inner">
+				<h2 class="p-frontContact__titleEn c--sectonTitle --jacques">CONTACT</h2>
+				<p class="p-frontContact__text --noto">下記フォームの必須項目にご記入いただき、「内容を送信する」ボタンを押して送信してください。<br>
+					お問い合わせフォーム送信後、自動で受付メールを送信いたします。<br>
+					受付メールが届かない場合は、別のメールアドレスをご使用いただくか、下記まで直接ご連絡ください</p>
+
+				<div class="tab-panel --noto">
+					<!--タブ-->
+					<ul class="tab-group">
+						<li class="tab tab-A is-active">お仕事の<br class="tab-Br">ご相談</li>
+						<li class="tab tab-B">協業に<br class="tab-Br">ついて</li>
+						<li class="tab tab-C">その他</li>
+					</ul>
+
+					<!--タブを切り替えて表示するコンテンツ-->
+					<div class="panel-group">
+						<div class="panel tab-A is-show">
+							<div class="p-contactForm" id="formWrap">
+								<form method="post" action="./mail.php">
+									<table class="formTable"
+										style="width: 100%; table-layout: fixed; word-break: break-all; word-wrap: break-all;">
+
+										<tr class="tr-1">
+											<th class="Required">貴社名<span class="careful">※個人の場合は「個人」と記載ください。</span>
+											</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="貴社名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">氏名</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required class="td-half" type="text" name="お名前" placeholder="姓" /><input
+													class="td-half" type="text" name="氏名" placeholder="名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">電話番号</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="電話番号" placeholder="ハイフンなし" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">メールアドレス</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="Email" placeholder="xxx@xxx.xxx" />
+											</td>
+										</tr>
+
+										<tr class="tr-1">
+											<th>会社HP</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input type="text" name="会社HP" placeholder="https(s)://~" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">お問い合わせ内容</th>
+										</tr>
+										<tr class="tr-TA2">
+											<td><textarea required name="お問い合わせ内容"></textarea></td>
+										</tr>
+
+										<tr class="tr-1 PP">
+											<th class="Required PP">個人情報の取扱いについて</th>
+										</tr>
+										<tr class="PP">
+											<td>当社の<span class="PR__link">PRIVACY
+													POLICY</span>に同意頂ける場合は「同意する」にチェックを付けてください。</td>
+										</tr>
+										<tr class="tr-CB2 tr-2">
+											<td><input required class="checkbox" type="checkbox" name="プライバシーポリシー" /><span>同意する</span></td>
+										</tr>
+
+									</table>
+									<p class="submit" align="center">
+										<input type="submit" value="送信" />
+									</p>
+
+									<div class="modal-container">
+										<div class="modal-body">
+											<!-- 閉じるボタン -->
+
+											<!-- モーダル内のコンテンツ -->
+											<div class="modal-content --noto">
+												<div class="modal-close --noto">close</div>
+												<h2 class="p-modal-title c--sectonTitle --jacques">PRIVACY POLICY</h2>
+												<p class="p-modal__text">
+													INONは、お客様との信頼関係を損なうことのないように、お客様からお預かりする個人情報を適切に取り扱うべく、次のような方針を定め、すべての従業者に遵守させるとともに、継続的な改善努力を行うことをここに表明致します。<br>
+													・個人情報の適正な取り扱いに関する法令その他の規範を遵守いたします。<br>
+													・個人情報の取り扱いに関する規程類を明確化し、従業者に周知徹底します。また、個人情報を取り扱う委託先等に対しても、個人情報の適切な取り扱いを要請します。<br>
+													・個人情報の収集に際しては、あらかじめ収集・利用目的を告知し、お客様の同意のうえで収集します。また、同意を得た利用目的にしたがって個人情報を取り扱います。<br>
+													・当社の保有するお客様の個人情報について、お客様ご本人からの
+													開示、訂正、削除、利用停止の依頼をお受けして、誠意を持って対応させて頂きます。<br>
+													・当社の保有するお客様の個人情報について、流出等の事故を招かないよう、必要となる対策を講じます。<br>
+												</p>
+											</div>
+										</div>
+									</div>
+
+
+								</form>
+							</div>
+						</div>
+
+						<div class="panel tab-B">
+							<div class="p-contactForm" id="formWrap">
+								<form method="post" action="./mail.php">
+									<table class="formTable">
+
+										<tr class="tr-1">
+											<th class="Required">貴社名<span class="careful">※個人の場合は「個人」と記載ください。</span>
+											</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="貴社名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">氏名</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required class="td-half" type="text" name="氏名" placeholder="姓" /><input class="td-half"
+													type="text" name="氏名" placeholder="名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">電話番号</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="電話番号" placeholder="ハイフンなし" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">メールアドレス</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="メールアドレス" placeholder="xxx@xxx.xxx" />
+											</td>
+										</tr>
+
+										<tr class="tr-1">
+											<th>会社HP</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input type="text" name="会社HP" placeholder="https(s)://~" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">お問い合わせ内容</th>
+										</tr>
+										<tr class="tr-TA2">
+											<td><textarea required name="お問い合わせ内容"></textarea></td>
+										</tr>
+
+										<tr class="tr-1 PP">
+											<th class="Required PP">個人情報の取扱いについて</th>
+										</tr>
+										<tr class="PP">
+											<td>当社の<span class="PR__link">PRIVACY
+													POLICY</span>に同意頂ける場合は「同意する」にチェックを付けてください。</td>
+										</tr>
+										<tr class="tr-CB2 tr-2">
+											<td><input required class="checkbox" type="checkbox" name="プライバシーポリシー" /><span>同意する</span></td>
+										</tr>
+
+									</table>
+									<p class="submit" align="center">
+										<input type="submit" value="送信" />
+									</p>
+
+									<div class="modal-container">
+										<div class="modal-body">
+											<!-- 閉じるボタン -->
+
+											<!-- モーダル内のコンテンツ -->
+											<div class="modal-content --noto">
+												<div class="modal-close --noto">close</div>
+												<h2 class="p-modal-title c--sectonTitle --jacques">PRIVACY POLICY</h2>
+												<p class="p-modal__text">
+													INONは、お客様との信頼関係を損なうことのないように、お客様からお預かりする個人情報を適切に取り扱うべく、次のような方針を定め、すべての従業者に遵守させるとともに、継続的な改善努力を行うことをここに表明致します。<br>
+													・個人情報の適正な取り扱いに関する法令その他の規範を遵守いたします。<br class="responsive-none">
+													・個人情報の取り扱いに関する規程類を明確化し、従業者に周知徹底します。また、個人情報を取り扱う委託先等に対しても、個人情報の適切な取り扱いを要請します。<br>
+													・個人情報の収集に際しては、あらかじめ収集・利用目的を告知し、お客様の同意のうえで収集します。また、同意を得た利用目的にしたがって個人情報を取り扱います。<br>
+													・当社の保有するお客様の個人情報について、お客様ご本人からの
+													開示、訂正、削除、利用停止の依頼をお受けして、誠意を持って対応させて頂きます。<br>
+													・当社の保有するお客様の個人情報について、流出等の事故を招かないよう、必要となる対策を講じます。<br>
+												</p>
+											</div>
+										</div>
+									</div>
+
+
+								</form>
+							</div>
+						</div>
+
+						<div class="panel tab-C">
+							<div class="p-contactForm" id="formWrap">
+								<form method="post" action="./mail.php">
+									<table class="formTable">
+
+										<tr class="tr-1">
+											<th class="Required">貴社名<span class="careful">※個人の場合は「個人」と記載ください。</span>
+											</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="貴社名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">氏名</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required class="td-half" type="text" name="氏名" placeholder="姓" /><input class="td-half"
+													type="text" name="氏名" placeholder="名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">電話番号</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="電話番号" placeholder="ハイフンなし" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">メールアドレス</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="メールアドレス" placeholder="xxx@xxx.xxx" />
+											</td>
+										</tr>
+
+										<tr class="tr-1">
+											<th>会社HP</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input type="text" name="会社HP" placeholder="https(s)://~" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">お問い合わせ内容</th>
+										</tr>
+										<tr class="tr-TA2">
+											<td><textarea required name="お問い合わせ内容"></textarea></td>
+										</tr>
+
+										<tr class="tr-1 PP">
+											<th class="Required PP">個人情報の取扱いについて</th>
+										</tr>
+										<tr class="PP">
+											<td>当社の<span class="PR__link">PRIVACY
+													POLICY</span>に同意頂ける場合は「同意する」にチェックを付けてください。</td>
+										</tr>
+										<tr class="tr-CB2 tr-2">
+											<td><input required class="checkbox" type="checkbox" name="プライバシーポリシー" /><span>同意する</span></td>
+										</tr>
+
+									</table>
+									<p class="submit" align="center">
+										<input type="submit" value="送信" />
+									</p>
+
+									<div class="modal-container">
+										<div class="modal-body">
+											<!-- 閉じるボタン -->
+
+											<!-- モーダル内のコンテンツ -->
+											<div class="modal-content --noto">
+												<div class="modal-close --noto">close</div>
+												<h2 class="p-modal-title c--sectonTitle --jacques">PRIVACY POLICY</h2>
+												<p class="p-modal__text">
+													INONは、お客様との信頼関係を損なうことのないように、お客様からお預かりする個人情報を適切に取り扱うべく、次のような方針を定め、すべての従業者に遵守させるとともに、継続的な改善努力を行うことをここに表明致します。<br>
+													・個人情報の適正な取り扱いに関する法令その他の規範を遵守いたします。<br>
+													・個人情報の取り扱いに関する規程類を明確化し、従業者に周知徹底します。また、個人情報を取り扱う委託先等に対しても、個人情報の適切な取り扱いを要請します。<br>
+													・個人情報の収集に際しては、あらかじめ収集・利用目的を告知し、お客様の同意のうえで収集します。また、同意を得た利用目的にしたがって個人情報を取り扱います。<br>
+													・当社の保有するお客様の個人情報について、お客様ご本人からの
+													開示、訂正、削除、利用停止の依頼をお受けして、誠意を持って対応させて頂きます。<br>
+													・当社の保有するお客様の個人情報について、流出等の事故を招かないよう、必要となる対策を講じます。<br>
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+	</main>
+
+
+	<footer class="l-footer">
+		<div class="l-footer__wrap">
+			<div class="l-footer__copyright --noto">
+				© 2021,INON ALL RIGHTS RESERVED
+			</div>
+			<div class="l-footer__logo">
+				<picture>
+					<source loading="lazy" srcset="./img/footer-logo.webp" type="footer-logo.webp" alt="INONロゴ">
+					<img src="./img/footer-logo.png" alt="INONロゴ">
+				</picture>
+			</div>
+		</div>
+	</footer>
+
+	<a class="l-footer__topBtn" id="topBtn" href="#"></a>
+
+</body>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var lazyloadImages;
+
+		if ("IntersectionObserver" in window) {
+			lazyloadImages = document.querySelectorAll(".bg-lazy");
+			var imageObserver = new IntersectionObserver(function (entries, observer) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						var image = entry.target;
+						image.classList.remove("bg-lazy");
+						imageObserver.unobserve(image);
+					}
+				});
+			});
+
+			lazyloadImages.forEach(function (image) {
+				imageObserver.observe(image);
+			});
+		} else {
+			var lazyloadThrottleTimeout;
+			lazyloadImages = document.querySelectorAll(".bg-lazy");
+
+			function lazyload() {
+				if (lazyloadThrottleTimeout) {
+					clearTimeout(lazyloadThrottleTimeout);
+				}
+
+				lazyloadThrottleTimeout = setTimeout(function () {
+					var scrollTop = window.pageYOffset;
+					lazyloadImages.forEach(function (img) {
+						if (img.offsetTop < (window.innerHeight + scrollTop)) {
+							img.src = img.dataset.src;
+							img.classList.remove('bg-lazy');
+						}
+					});
+					if (lazyloadImages.length == 0) {
+						document.removeEventListener("scroll", lazyload);
+						window.removeEventListener("resize", lazyload);
+						window.removeEventListener("orientationChange", lazyload);
+					}
+				}, 20);
+			}
+
+			document.addEventListener("scroll", lazyload);
+			window.addEventListener("resize", lazyload);
+			window.addEventListener("orientationChange", lazyload);
+		}
+	})
+
+
+	new WOW().init();
+
+
+</script>
+
+</html>
