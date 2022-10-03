@@ -1,0 +1,7 @@
+@use "../../global" as global;
+
+.c--setionPadding{
+    @include global.min-screen(global.$breakpoint_sp-1) {
+        padding-left: 100px;
+    }
+}

@@ -1,0 +1,90 @@
+@use "../global" as global;
+
+.l-flex {
+  $parent: &;
+  display: flex;
+
+  &.__tb {
+    @include global.max-screen(global.$breakpoint_tb) {
+      flex-direction: column;
+    }
+  }
+
+  &.__sp {
+    @include global.max-screen(global.$breakpoint_sp) {
+      flex-direction: column;
+    }
+  }
+
+  &-justify {
+    &__beetween {
+      @extend #{$parent};
+
+      justify-content: space-between;
+    }
+
+    &__center {
+      @extend #{$parent};
+
+      justify-content: center;
+    }
+
+    &__end {
+      @extend #{$parent};
+
+      justify-content: flex-end;
+    }
+  }
+
+  &-align {
+    &__center {
+      @extend #{$parent};
+
+      align-items: center;
+    }
+
+    &__start {
+      @extend #{$parent};
+
+      align-items: flex-start;
+    }
+
+    &__end {
+      @extend #{$parent};
+
+      align-items: flex-end;
+    }
+  }
+
+  &-wrap {
+    @extend #{$parent};
+
+    flex-wrap: wrap;
+  }
+
+  &-direction {
+    &__col {
+      @extend #{$parent};
+
+      flex-direction: column;
+    }
+
+    &__col-r {
+      @extend #{$parent};
+
+      flex-direction: column-reverse;
+    }
+
+    &__row {
+      @extend #{$parent};
+
+      flex-direction: row;
+    }
+
+    &__row-r {
+      @extend #{$parent};
+
+      flex-direction: row-reverse;
+    }
+  }
+}

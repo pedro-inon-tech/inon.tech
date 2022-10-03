@@ -1,0 +1,42 @@
+@use "../../global" as global;
+
+.c--secitonTriangle{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(#{global.$path_img}section-01.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: -251px;
+        left: 0;
+        width: 1776px;
+        height: 254px;
+        max-width: 100%;
+
+        @include global.max-screen(global.$breakpoint_sp) {
+            top: -181px;
+        }
+    }
+}
+
+.c--secitonTriangle__reverse{
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(#{global.$path_img}section-02.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: -251px;
+        left: 0;
+        width: 1776px;
+        height: 254px;
+        max-width: 100%;
+
+        @include global.max-screen(global.$breakpoint_sp) {
+            bottom: -181px;
+        }
+    }
+}

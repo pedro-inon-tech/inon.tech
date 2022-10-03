@@ -1,0 +1,43 @@
+@use "../../global" as global;
+
+.c--sectonTitle {
+    color: global.$c--main;
+    font-size: 12.5rem;
+    filter: drop-shadow(0 4px 4px black);
+    transform: rotate(-8.5deg);
+    display: inline-block;
+    opacity: 0.7;
+    font-weight: 400;
+
+    @include global.max-screen(global.$breakpoint_tb) {
+        font-size: 10rem;
+    }
+
+    @include global.max-screen(global.$breakpoint_sp_small) {
+        font-size: 6rem;
+    }
+
+    @include global.max-screen(350px) {
+        font-size: 5rem;
+    }
+
+    span {
+        display: block;
+        color: global.$c--gray;
+        font-size: 6rem;
+        font-weight: 300;
+
+        @include global.max-screen(global.$breakpoint_sp) {
+            font-size: 5rem;
+        }
+        @include global.max-screen(global.$breakpoint_sp_small) {
+            font-size: 4rem;
+        }
+        @include global.max-screen(global.$breakpoint_sp_smaller) {
+            font-size: 3rem;
+        }
+        @include global.max-screen(global.$breakpoint_sp_smallest) {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// ==============================================================
+//  break points
+// ==============================================================
+$breakpoint_pc: 1140px;
+$breakpoint_tb: 1000px;
+$breakpoint_sp: 767px;
+$breakpoint_sp_small: 600px;
+$breakpoint_sp_smaller: 425px;
+$breakpoint_sp_smallest: 320px;
+
+// headerPC,SPの移り変わりのため($breakpoint_sp-1)
+$breakpoint_sp-1: 768px;
+// ==============================================================
+//  path
+// ==============================================================
+$path_img: "/img/";
+
+// ==============================================================
+//  color
+// ==============================================================
+$c--main: #6C1212;
+
+$c--primary: #4C0D0D;
+
+$c--black: #000;
+
+$c--gray: #777777;
+
+$c--white: #fff;
+
+$f--gothic: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
