@@ -1,0 +1,95 @@
+@use "../../global" as global;
+
+.l-footer {
+    background: global.$c--black;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    position: relative;
+    z-index: 3;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+}
+
+.l-footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1340px;
+    max-width: 100%;
+    padding: 0 100px;
+
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+}
+
+.l-footer__copyright {
+    color: global.$c--white;
+    font-size: 1.6rem;
+    align-items: center;
+    opacity: 0.5;
+    font-weight: 200;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        font-size: 10px;
+    }
+}
+
+.l-footer__logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include global.max-screen(global.$breakpoint_sp) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    img {
+        width: 131px;
+        height: 85px;
+        @include global.max-screen(global.$breakpoint_sp) {
+            width: 65.5px;
+            height: 42.5px;
+        }
+    }
+}
+
+.l-footer__topBtn{
+    position: fixed;
+    right: 10px;
+    bottom: 28px;
+    z-index: 10;
+    margin: 0 0 0 40px;
+    background: #000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    transition: all .4s ease;
+    align-items: center;
+    justify-content: center;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+       bottom: 10px;
+    }
+
+    &::before{
+        content: "";
+        width: 14px;
+        height: 14px;
+        border-top: solid 2px #fff;
+        border-left: solid 2px #fff;
+        transform: translateY(30%) rotate(45deg);
+        transition: .3s;
+    }
+
+    &:hover::before{
+        opacity: 0.75;
+    }
+
+}

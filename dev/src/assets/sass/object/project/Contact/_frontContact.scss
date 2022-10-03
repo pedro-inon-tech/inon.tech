@@ -1,0 +1,473 @@
+@use "../../../global" as global;
+
+.p-frontContact{
+    z-index: 3;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 100px;
+
+
+    @include global.max-screen(1000px) {
+        padding-bottom: 50px;
+        margin-left: 0 !important;
+    }
+}
+
+.p-frontContact__titleEn {
+    filter: none !important;
+    opacity: 1 !important;
+    font-weight: 400 !important;
+    transform: rotate(0deg) !important;
+    margin-top: 100px;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        margin-top: 50px;
+    }
+}
+
+.p-frontContact__text {
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
+    padding-left: 20px;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        margin-top: 25px;
+        padding-left: 0;
+    }
+}
+
+.contactForm {
+}
+
+.tab-group {
+    margin-top: 100px;
+    display: flex;
+    border-bottom: 1px solid #000;
+    margin-left: 20px;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+}
+.tab {
+    padding: 17px 0;
+    list-style: none;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2.4rem;
+    background: #000;
+    color: #fff;
+    width: 270px;
+    height: 70px;
+
+    .tab-Br {
+        display: none;
+    }
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        font-size: 1.4rem;
+        padding: 5px 15px;
+        height: 45px;
+        align-items: center;
+        vertical-align: middle;
+
+        .tab-Br {
+            display: block;
+        }
+    }
+
+    &:nth-of-type(1) {
+    }
+    &:nth-of-type(2) {
+        margin-left: 40px;
+
+        @include global.max-screen(global.$breakpoint_sp) {
+            margin-left: 15px;
+        }
+    }
+    &:nth-of-type(3) {
+        margin-left: 40px;
+
+        @include global.max-screen(global.$breakpoint_sp) {
+            padding-top: 14px;
+            margin-left: 15px;
+        }
+    }
+}
+.panel-group {
+    border-top: none;
+    background: #fff;
+}
+.panel {
+    display: none;
+    transition: all 0.2s ease-out;
+}
+.tab.is-active {
+    background: #fff;
+    color: #000;
+    transition: all 0.2s ease-out;
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 1px;
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        color: #000;
+        z-index: 8;
+        left: 0;
+        border-bottom: 1px solid #fff;
+    }
+}
+.panel.is-show {
+    display: block;
+}
+
+@keyframes tooltipShow {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+  .panel {
+    display: none;
+  }
+  .panel.is-show {
+    animation: tooltipShow 0.3s linear 0s;
+    display: block;
+  }
+
+.p-contactForm {
+    margin-top: 120px;
+    display: block;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+        margin-top: 50px;
+    }
+
+    .formTable {
+        width: 902px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        border-bottom: 1px dashed #000;
+    }
+
+    tr {
+    }
+
+    th {
+        text-align: left;
+        font-size: 2.4rem;
+        font-weight: 400;
+
+        .careful {
+            font-size: 1.8rem;
+            @include global.max-screen(global.$breakpoint_sp) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    td {
+        input {
+            width: 100%;
+            height: 60px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 2.4rem;
+            font-weight: 400;
+            background-color: #f1f1f1;
+            border: 1px solid #7e7e7e;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 2.4rem;
+            font-weight: 400;
+            background-color: #f1f1f1;
+            border: 1px solid #7e7e7e;
+            border-radius: 5px;
+            height: 310px;
+            resize: none;
+        }
+    }
+
+    .td-half {
+        width: calc(50% - 5px);
+
+        &:nth-child(2) {
+            margin-left: 10px;
+        }
+    }
+
+    .Required {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "必須";
+            right: 0;
+            font-size: 1.6rem;
+            border: 1px solid global.$c--main;
+            color: global.$c--main;
+            border-radius: 5px;
+            padding: 2px 4px;
+            bottom: 4px;
+        }
+    }
+
+    .tr-1 {
+        height: 65px;
+        vertical-align: bottom;
+    }
+
+    .tr-TA2 {
+        height: 350px;
+
+        td {
+            border-bottom: 1px dashed #000;
+        }
+    }
+
+    .tr-2 {
+        height: 110px;
+
+        td {
+            border-bottom: 1px dashed #000;
+        }
+    }
+
+    .PP {
+        text-align: center;
+
+        td {
+            font-size: 2rem;
+        }
+    }
+
+    .tr-CB2 {
+        td {
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #f1f1f1;
+            border: 1px solid #7e7e7e;
+            border-radius: 5px;
+            width: 233px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            height: 48px;
+            font-size: 2.4rem;
+            text-align: center;
+
+            span {
+                font-weight: 400;
+                margin-left: 10px;
+                letter-spacing: 0.2px;
+                line-height: 1;
+                align-items: center;
+                vertical-align: middle;
+                text-align: center;
+
+                @include global.max-screen(1000px) {
+                    vertical-align: -6px;
+                }
+            }
+        }
+
+        .checkbox {
+            border: none !important;
+            width: 24px;
+            height: 24px;
+            border-radius: 5px;
+            vertical-align: -6px;
+
+            @include global.max-screen(1000px) {
+                vertical-align: -12px;
+            }
+        }
+    }
+
+    .submit {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 0px;
+
+        input {
+            color: #fff;
+            background-color: #000;
+            width: 277px;
+            height: 60px;
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.PR__link {
+    display: inline-block;
+    color: global.$c--main;
+    border-bottom: 1px solid global.$c--main;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.75;
+        cursor: pointer;
+    }
+}
+
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,50%);
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+    box-sizing: border-box;
+
+}
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active{
+	opacity: 1;
+	visibility: visible;
+    overflow-y: hidden;
+}
+/*モーダル枠の指定*/
+.modal-body{
+	display: inline-block;
+	vertical-align: middle;
+    padding-left: 100px;
+    max-width: 100%;
+    width: 90%;
+padding-bottom: 120px;
+
+
+    @include global.max-screen(global.$breakpoint_sp) {
+       padding-left: 0;
+       padding-bottom: 0;
+    }
+}
+/*モーダルを閉じるボタンの指定*/
+.modal-close{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    line-height: 50px;
+    width: 160px;
+    left: 50px;
+    top: 30px;
+    height: 60px;
+	color: #fff;
+	cursor: pointer;
+    border: 1px solid #fff;
+    transition: .3s;
+    max-width: 100%;
+
+    @include global.max-screen(global.$breakpoint_sp) {
+      left: 30px;
+      width: 100px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 35px;
+      }
+
+      @include global.max-screen(400px) {
+      left: 30px;
+    }
+
+    &:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}
+/*モーダル内のコンテンツの指定*/
+.modal-content{
+    position: relative;
+    background-color: #000;
+    height: auto;
+    width: 900px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    z-index: 100;
+    padding-top: 100px;
+
+    @include global.max-screen(1024px) {
+       
+    }
+
+     @include global.max-screen(400px) {
+    padding-bottom: 30px;
+}
+}
+
+.p-modal-title{
+font-size: 50px !important;
+transform: rotate(0);
+border-bottom: 1px solid #fff;
+opacity: 0.75;
+padding-left: 0 !important;
+
+@include global.max-screen(global.$breakpoint_sp) {
+   font-size: 35px !important;
+ }
+
+ @include global.max-screen(400px) {
+    font-size: 25px !important;
+}
+}
+
+.p-modal__text{
+color: #fff;
+padding-top: 20px;
+padding-left: 50px;
+padding-right: 50px;
+font-size: 12px;
+margin: 0 !important;
+
+@include global.max-screen(global.$breakpoint_sp) {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+}
+
+.responsive-none{
+    @include global.max-screen(global.$breakpoint_sp) {
+       display: none;
+    }
+}

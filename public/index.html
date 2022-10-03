@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inon.tech</title>
+
+	<!--ファビコンの設定-->
+	<link href=".img/logo-02.png" rel="shortcut icon">
+	<!--jQueryの読み込み-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--wow-js-->
+	<script src="/js/wow.min.js"></script>
+	<!--slick-js-->
+	<script src="./js/slick.min.js"></script>
+	<!--locomotive-js-->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script> -->
+	<!--myscript-js-->
+	<script type="text/javascript" src="./js/script.min.js"></script>
+	<!--リセットcssの読み込み-->
+	<link rel="stylesheet" href="./css/reset.css">
+	<!-- animate.css Animate -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- adobe font -->
+	<link rel="stylesheet" href="https://use.typekit.net/eoa4twy.css">
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<!--slick-css-->
+	<link rel="stylesheet" href="./css/slick-theme.css" />
+	<!--slick-css-->
+	<link rel="stylesheet" href="./css/slick.css" />
+	<!--locomotive-css-->
+	<!-- <link rel="stylesheet" href="./css/locomotive-scroll.min.css" /> -->
+	<!--fontawesome-css-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+	<!--独自スタイルの読み込み-->
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+	<header class="l-header">
+		<div class="l-headerPC" id="menubar">
+
+			<div class="l-headerPC__bar">
+				<a class="l-headerPC__logo" href="">
+					<img src="./img/logo-03.png" alt="">
+				</a>
+
+				<div class="l-headerPC__menuTrigger">
+					<a class="l-headerPC__menuBtn">
+						<span></span>
+					</a>
+				</div>
+
+				<a class="l-headerPC__contactBtn" href="#menuCONTACT">
+					<img src="./img/contact-red.png" alt="">
+				</a>
+
+			</div>
+
+			<div class="l-PCMenu">
+				<div class="l-PCMenu__wrap">
+					<ul class="l-PCMenu__list --noto">
+						<li class="l-PCMenu__item l-PCMenu__itemTOP"><a class="" href="#menuTOP">TOP</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemSTRONGNESS"><a href="#menuSTRONGNESS">STRONGNESS</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemSERVICE"><a href="#menuSERVICE">SERVICE</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemMEMBERS"><a href="#menuMEMBERS">MEMBERS</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemACHIEVEMENT"><a href="#menuACHIEVEMENT">ACHIEVEMENT</a></li>
+						<li class="l-PCMenu__item l-PCMenu__itemCONTACT"><a href="#menuCONTACT">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="l-headerSP" id="menubar">
+
+			<div class="l-headerSP__bar">
+				<nav class="dc-menu">
+					<a class="dc-menu-trigger"><span></span></a>
+					<a class="l-headerSP__logo" href="">
+						<img src="./img/logo-02.png" alt="">
+					</a>
+					<div class="menu-overlay --noto">
+						<ul>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuTOP">TOP</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuSTRONGNESS">STRONGNESS</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuSERVICE">SERVICE</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuMEMBERS">MEMBERS</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuACHIEVEMENT">ACHIEVEMENT</a></li>
+							<li class="l-SPMenu__item"><a class="l-SP__item" href="#menuCONTACT">CONTACT</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="loader">
+		<video loop playsinline muted autoplay preload="metadata">
+			<source src="./img/inon.tech-loading.mov" type="video/mp4">
+		</video>
+
+		<div class="loader__logo">
+			<img src="./img/logo-03.png" alt="">
+		</div>
+	</div>
+
+	<main class="front">
+		<!-- 修正があるため飛ばす。セクションーファーストビュー -->
+		<section class="p-frontFirstView" id="menuTOP">
+
+			<div class="p-front__video">
+				<video loop playsinline muted autoplay preload="metadata">
+					<source src="./img/bg-video.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="p-front__PCmask">
+				<img src="./img/top-01.png" alt="">
+			</div>
+
+			<div class="p-front__SPmask">
+				<img src="./img/sp-top-01-01.png" alt="">
+			</div>
+		</section>
+
+		<div class="p-frontFirstView__name">
+			<p class="--aviano">
+				<span>I</span>T'S<br>
+				<span>N</span>OW<br>
+				<span>O</span>R<br>
+				<span>N</span>EVER
+			</p>
+		</div>
+
+		<a href="#cont-wwa">
+			<div class="p-frontFirstView__PCscroll scrl">
+				<span></span>
+				<p>NEXT</p>
+				<span></span>
+			</div>
+		</a>
+
+		<!-- セクションーファーストビュー(終了) -->
+
+		<section class="p-frontLogo" id="cont-wwa">
+			<div class="p-frontLogo__listWrap">
+
+				<div class="p-frontLogo__list slick-slider">
+					<div class="slick-list">
+						<div class="slick-track --topSlide">
+							<div class="slick-slide">
+								<img src="./img/img-logo-1.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-2.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-3.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-4.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-5.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-6.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-7.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-8.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-9.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-10.png" alt="">
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="p-frontLogo__list slick-slider">
+					<div class="slick-list">
+						<div class="slick-track --bottomSlide" dir="rtl">
+							<div class="slick-slide">
+								<img src="./img/img-logo-11.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-12.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-13.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-14.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-15.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-16.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-17.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-18.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-19.png" alt="">
+							</div>
+							<div class="slick-slide">
+								<img src="./img/img-logo-20.png" alt="">
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="p-frontStrong c--secitonTriangle" id="menuSTRONGNESS" data-scroll-container>
+
+			<div class="l-inner">
+				<h2 class="c--sectonTitle --jacques is-inview" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-target="#organization">
+					STRONGNESS
+				</h2>
+
+				<div class="p-frontStrong__list">
+
+					<div class="p-frontStrong__item">
+						<img src="./img/strongness-0.1.png" alt="">
+						<div class="p-frontStrong__itemText --noto">
+							<h3 class="p-frontStrong__itemTitle">サイト設計に対する桁違いな拘り</h3>
+							<p class="p-frontStrong__itemDesc">
+								プロジェクトに携わるメンバー全員が事業を理解した状態でプロジェクトが始まります。
+							</p>
+						</div>
+					</div>
+					<div class="p-frontStrong__item">
+						<img src="./img/strongness-0.2.png" alt="">
+						<div class="p-frontStrong__itemText --noto">
+							<h3 class="p-frontStrong__itemTitle">KGIから逆算したKPI策定</h3>
+							<p class="p-frontStrong__itemDesc">
+								最終目標（KGI）から逆算した最適な小目標（KPI）の算出を可能とする、徹底的な事業分析
+							</p>
+						</div>
+					</div>
+					<div class="p-frontStrong__item">
+						<img src="./img/strongness-0.3.png" alt="">
+						<div class="p-frontStrong__itemText --noto">
+							<h3 class="p-frontStrong__itemTitle">洗練された工程管理による安心感</h3>
+							<p class="p-frontStrong__itemDesc">
+								工程管理の質を担保するチェックシートを公開することで、プロジェクトの進行を実感できる
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="p-frontService  c--secitonTriangle__reverse" id="menuSERVICE">
+
+			<div class="l-inner p-frontService__inner">
+				<h2 class="c--sectonTitle --jacques">
+					SERVICE
+				</h2>
+				<div class="p-frontService__text --noto">
+					<p>
+						私たちは<br>
+						PR会社であり、<br>
+						広告会社であり、<br>
+						クリエイティブ会社です。<br>
+						その全ての強さを掛け合わせ、デジタルと<br>
+						リアルを越境し、エンターテインメントの新しい価値を<br>
+						創造します。
+					</p>
+				</div>
+			</div>
+			<div class="p-frontServiceMain">
+				<div class="l-inner">
+					<h3 class="p-frontServiceMain__title --noto">
+						WEB/EC制作<br>
+						<span>サービスの流れ</span>
+					</h3>
+					<div class="p-frontServiceMain__list">
+
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>1</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								プロジェクト設計
+								<ul>
+									<li>・WBS作成</li>
+									<li>・制作要件整理</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>2</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								戦略
+								<ul>
+									<li>・ビジネスモデルの整理</li>
+									<li>・KPI・サイトの目標設定</li>
+									<li>・コンセプト策案</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>3</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								設計
+								<ul>
+									<li>・サイトのサイトマップの作成</li>
+									<li>・ワイヤーフレーム作成</li>
+									<li>・SEO対策を行うキーワードの選定</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>4</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								デザイン
+								<ul>
+									<li>・ベンチマーク競合サイト分析</li>
+									<li>・CIに基づいたデザイン設計</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>5</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								開発
+								<ul>
+									<li>・PJに適した開発規則の選定</li>
+									<li>・開発・サーバー環境構築</li>
+									<li>・SEO対策（ SSL・<br>
+										　構造化データの実装 など）</li>
+									<li>・解析設定</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMain__listItem --noto">
+							<div class="p-frontServiceMain__Itemleft">
+								<p>6</p>
+							</div>
+							<div class="p-frontServiceMain__ItemRight">
+								テストリリース
+								<ul>
+									<li>・表示テスト・挙動テスト</li>
+									<li>・ドキュメントの作成</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ここからはspの記述です -->
+				<!-- ここからはspの記述です -->
+				<!-- ここからはspの記述です -->
+				<div class="p-frontServiceMainSP__list service-slick">
+					<div class="service-slider">
+
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>1</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								プロジェクト設計
+								<ul>
+									<li>・WBS作成</li>
+									<li>・制作要件整理</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>2</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								戦略
+								<ul>
+									<li>・ビジネスモデルの整理</li>
+									<li>・KPI・サイトの目標設定</li>
+									<li>・コンセプト策案</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>3</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								設計
+								<ul>
+									<li>・サイトのサイトマップの作成</li>
+									<li>・ワイヤーフレーム作成</li>
+									<li>・SEO対策を行うキーワードの選定</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="service-slider">
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>4</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								デザイン
+								<ul>
+									<li>・ベンチマーク競合サイト分析</li>
+									<li>・CIに基づいたデザイン設計</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>5</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								開発
+								<ul>
+									<li>・PJに適した開発規則の選定</li>
+									<li>・開発・サーバー環境構築</li>
+									<li>・SEO対策（ SSL・<br>
+										　構造化データの実装 など）</li>
+									<li>・解析設定</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-frontServiceMainSP__listItem --noto">
+							<div class="p-frontServiceMainSP__Itemleft">
+								<p>6</p>
+							</div>
+							<div class="p-frontServiceMainSP__ItemRight">
+								テストリリース
+								<ul>
+									<li>・表示テスト・挙動テスト</li>
+									<li>・ドキュメントの作成</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</section>
+		<section class="p-frontMembers" id="menuMEMBERS">
+
+			<div class="l-inner">
+				<h2 class="p-fronttMembers__titleEn  c--sectonTitle --jacques">
+					MEMBERS
+				</h2>
+			</div>
+
+			<div class="p-frontMembersPC  --noto">
+				<div class="p-frontMembersBottom">
+					<div class="l-inner p-frontMembers__inner">
+						<div class="p-frontMembersBottom__left">
+							<div class="p-frontMembers__enName">
+								Tadano Pedro
+							</div>
+
+							<div class="p-frontMembers__jpName">
+								creative leader
+							</div>
+							<div class="p-frontMembers__desc">
+								この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+							</div>
+
+							<div class="p-frontMembers__sns">
+								<a href=""><i class="fab fa-facebook"></i></a>
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+						<div class="p-frontMembersBottom__right">
+							<div class="p-frontMembersBottom__img"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="p-frontMembersTop">
+					<div class="l-inner p-frontMembers__inner">
+						<div class="p-frontMembersTop__left">
+							<div class="p-frontMembersTop__img"></div>
+						</div>
+						<div class="p-frontMembersTop__right">
+							<div class="p-frontMembers__enName">
+								Shibata kousei
+							</div>
+
+							<div class="p-frontMembers__jpName">
+								creative leader
+							</div>
+
+							<div class="p-frontMembers__desc">
+								この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+							</div>
+							<div class="p-frontMembers__sns">
+								<a href=""><i class="fab fa-facebook"></i></a>
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-instagram"></i></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-frontMembersSP  --noto">
+
+				<div class="p-frontMembersSPTop">
+					<div class="l-inner p-frontMembersSP__inner">
+						<div class="p-frontMembersSPTop__left">
+							<div class="p-frontMembersSPTop__img"></div>
+						</div>
+						<div class="p-frontMembersSPTop__right">
+							<div class="p-frontMembersSP__enName">
+								ー Tadano Pedro ー
+							</div>
+
+							<div class="p-frontMembersSP__jpName">
+								只野 ペドロ
+							</div>
+
+							<div class="p-frontMembersSP__desc">
+								この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="p-frontMembersSPBottom">
+					<div class="l-inner p-frontMembersSP__inner">
+						<div class="p-frontMembersSPBottom__left">
+							<div class="p-frontMembersSP__enName">
+								ー Shibata Kosei ー
+							</div>
+
+							<div class="p-frontMembersSP__jpName">
+								柴田 滉生
+							</div>
+							<div class="p-frontMembersSP__desc">
+								この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーで
+							</div>
+						</div>
+						<div class="p-frontMembersSPBottom__right">
+							<div class="p-frontMembersSPBottom__img"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="p-frontAchieve c--secitonTriangle" id="menuACHIEVEMENT">
+
+			<!-- <div class="rulers">
+        <div class="rulers__block"></div>
+        <div class="rulers__block"></div>
+        <div class="rulers__block"></div>
+        <div class="rulers__block"></div>
+      </div>
+
+      <div class="rulers">
+        <div class="rulers__line"></div>
+        <div class="rulers__line"></div>
+        <div class="rulers__line"></div>
+        <div class="rulers__line"></div>
+      </div> -->
+
+
+			<div class="l-inner">
+				<h2 class="p-frontAchieve__titleEn c--sectonTitle --jacques">
+					Achieve
+				</h2>
+			</div>
+			<div class="p-frontAchieve__main">
+				<a href="http://www.talentxbuzz.com/" class="p-frontAchieve__topItem">
+					<div class="p-frontAchieve__title">
+						<img src="./img/achievement-04.png" alt="">
+					</div>
+
+					<div class="p-frontAchieve__wrap --noto">
+						<div class="p-frontAchieve__img" style="order: 2;">
+							<img src="./img/achievement-03.png" alt="">
+						</div>
+						<div class="p-frontAchieve__desc">
+							ネット業界で史上初となる、SNS連動型ツイートゲーム「ゴジラvsバズラ」の企画統括。<br class="achieve-br">
+							ネット上で最も強いモンスター「クチコミ（=ツイート）」をバズラという架空の怪獣に見立て、特定のハッシュタグをつけて投稿する
+						</div>
+					</div>
+				</a>
+
+				<a href="https://kuromiya.jp/" class="p-frontAchieve__bottomItem">
+					<div class="p-frontAchieve__title">
+						<img src="./img/achievement-02.png" alt="">
+					</div>
+
+					<div class="p-frontAchieve__wrap --noto">
+						<div class="p-frontAchieve__img">
+							<img src="./img/achievement-01.png" alt="">
+						</div>
+						<div class="p-frontAchieve__desc">
+							ネット業界で史上初となる、SNS連動型ツイートゲーム「ゴジラvsバズラ」の企画統括。<br class="achieve-br">
+							ネット上で最も強いモンスター「クチコミ（=ツイート）」をバズラという架空の怪獣に見立て、特定のハッシュタグをつけて投稿する
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="p-frontAchieveSP__main">
+				<div class="l-inner">
+
+					<a href="http://www.talentxbuzz.com/" class="p-frontAchieveSPTop">
+						<div class="p-frontAchieveSPTOP__left">
+							<div class="p-frontAchieveSPTOP__logo">
+								<img src="./img/achievement-04.png" alt="">
+							</div>
+
+							<div class="p-frontAchieveSPTOP__desc">
+								<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+						</div>
+
+						<div class="p-frontAchieveSPTop__right">
+							<img src="./img/achievement-sp1.png" alt="">
+						</div>
+					</a>
+
+					<a href="https://kuromiya.jp/" class="p-frontAchieveSPBottom">
+						<div class="p-frontAchieveSPBottom__left">
+							<img src="./img/achievement-sp2.png" alt="">
+						</div>
+
+						<div class="p-frontAchieveSPBottom__right">
+							<div class="p-frontAchieveSPBottom__logo">
+								<img src="./img/achievement-02.png" alt="">
+							</div>
+							<div class="p-frontAchieveSPBottom__desc">
+								<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="p-frontContact" id="menuCONTACT">
+			<div class="l-inner">
+				<h2 class="p-frontContact__titleEn c--sectonTitle --jacques">CONTACT</h2>
+				<p class="p-frontContact__text --noto">下記フォームの必須項目にご記入いただき、「内容を送信する」ボタンを押して送信してください。<br>
+					お問い合わせフォーム送信後、自動で受付メールを送信いたします。<br>
+					受付メールが届かない場合は、別のメールアドレスをご使用いただくか、下記まで直接ご連絡ください</p>
+
+				<div class="tab-panel --noto">
+					<!--タブ-->
+					<ul class="tab-group">
+						<li class="tab tab-A is-active">お仕事の<br class="tab-Br">ご相談</li>
+						<li class="tab tab-B">協業に<br class="tab-Br">ついて</li>
+						<li class="tab tab-C">その他</li>
+					</ul>
+
+					<!--タブを切り替えて表示するコンテンツ-->
+					<div class="panel-group">
+						<div class="panel tab-A is-show">
+							<div class="p-contactForm" id="formWrap">
+								<form method="post" action="./mail.php">
+									<table class="formTable">
+
+										<tr class="tr-1">
+											<th class="Required">貴社名<span class="careful">※個人の場合は「個人」と記載ください。</span></th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="貴社名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">氏名</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required class="td-half" type="text" name="氏名" placeholder="姓" /><input class="td-half" type="text" name="氏名" placeholder="名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">電話番号</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="電話番号" placeholder="ハイフンなし" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">メールアドレス</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="メールアドレス" placeholder="xxx@xxx.xxx" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th>会社HP</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input type="text" name="会社HP" placeholder="https(s)://~" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">お問い合わせ内容</th>
+										</tr>
+										<tr class="tr-TA2">
+											<td><textarea required name="お問い合わせ内容"></textarea></td>
+										</tr>
+
+										<tr class="tr-1 PP">
+											<th class="Required PP">個人情報の取扱いについて</th>
+										</tr>
+										<tr class="PP">
+											<td>当社の<span class="PR__link">PRIVACY POLICY</span>に同意頂ける場合は「同意する」にチェックを付けてください。</td>
+										</tr>
+										<tr class="tr-CB2 tr-2">
+											<td><input required class="checkbox" type="checkbox" name="プライバシーポリシー" /><span>同意する</span></td>
+										</tr>
+
+									</table>
+									<p class="submit" align="center">
+										<input type="submit" value="送信" />
+									</p>
+
+									<div class="modal-container">
+										<div class="modal-body">
+											<!-- 閉じるボタン -->
+
+											<!-- モーダル内のコンテンツ -->
+											<div class="modal-content --noto">
+												<div class="modal-close --noto">close</div>
+												<h2 class="p-modal-title c--sectonTitle --jacques">PRIVACY POLICY</h2>
+												<p class="p-modal__text">
+													INONは、お客様との信頼関係を損なうことのないように、お客様からお預かりする個人情報を適切に取り扱うべく、次のような方針を定め、すべての従業者に遵守させるとともに、継続的な改善努力を行うことをここに表明致します。<br>
+													・個人情報の適正な取り扱いに関する法令その他の規範を遵守いたします。<br>
+													・個人情報の取り扱いに関する規程類を明確化し、従業者に周知徹底します。また、個人情報を取り扱う委託先等に対しても、個人情報の適切な取り扱いを要請します。<br>
+													・個人情報の収集に際しては、あらかじめ収集・利用目的を告知し、お客様の同意のうえで収集します。また、同意を得た利用目的にしたがって個人情報を取り扱います。<br>
+													・当社の保有するお客様の個人情報について、お客様ご本人からの 開示、訂正、削除、利用停止の依頼をお受けして、誠意を持って対応させて頂きます。<br>
+													・当社の保有するお客様の個人情報について、流出等の事故を招かないよう、必要となる対策を講じます。<br>
+												</p>
+											</div>
+										</div>
+									</div>
+
+
+								</form>
+							</div>
+						</div>
+
+						<div class="panel tab-B">
+							<div class="p-contactForm" id="formWrap">
+								<form method="post" action="./mail.php">
+									<table class="formTable">
+
+										<tr class="tr-1">
+											<th class="Required">貴社名<span class="careful">※個人の場合は「個人」と記載ください。</span></th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="貴社名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">氏名</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required class="td-half" type="text" name="氏名" placeholder="姓" /><input class="td-half" type="text" name="氏名" placeholder="名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">電話番号</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="電話番号" placeholder="ハイフンなし" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">メールアドレス</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="メールアドレス" placeholder="xxx@xxx.xxx" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th>会社HP</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input type="text" name="会社HP" placeholder="https(s)://~" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">お問い合わせ内容</th>
+										</tr>
+										<tr class="tr-TA2">
+											<td><textarea required name="お問い合わせ内容"></textarea></td>
+										</tr>
+
+										<tr class="tr-1 PP">
+											<th class="Required PP">個人情報の取扱いについて</th>
+										</tr>
+										<tr class="PP">
+											<td>当社の<span class="PR__link">PRIVACY POLICY</span>に同意頂ける場合は「同意する」にチェックを付けてください。</td>
+										</tr>
+										<tr class="tr-CB2 tr-2">
+											<td><input required class="checkbox" type="checkbox" name="プライバシーポリシー" /><span>同意する</span></td>
+										</tr>
+
+									</table>
+									<p class="submit" align="center">
+										<input type="submit" value="送信" />
+									</p>
+
+									<div class="modal-container">
+										<div class="modal-body">
+											<!-- 閉じるボタン -->
+
+											<!-- モーダル内のコンテンツ -->
+											<div class="modal-content --noto">
+												<div class="modal-close --noto">close</div>
+												<h2 class="p-modal-title c--sectonTitle --jacques">PRIVACY POLICY</h2>
+												<p class="p-modal__text">
+													INONは、お客様との信頼関係を損なうことのないように、お客様からお預かりする個人情報を適切に取り扱うべく、次のような方針を定め、すべての従業者に遵守させるとともに、継続的な改善努力を行うことをここに表明致します。<br>
+													・個人情報の適正な取り扱いに関する法令その他の規範を遵守いたします。<br class="responsive-none">
+													・個人情報の取り扱いに関する規程類を明確化し、従業者に周知徹底します。また、個人情報を取り扱う委託先等に対しても、個人情報の適切な取り扱いを要請します。<br>
+													・個人情報の収集に際しては、あらかじめ収集・利用目的を告知し、お客様の同意のうえで収集します。また、同意を得た利用目的にしたがって個人情報を取り扱います。<br>
+													・当社の保有するお客様の個人情報について、お客様ご本人からの 開示、訂正、削除、利用停止の依頼をお受けして、誠意を持って対応させて頂きます。<br>
+													・当社の保有するお客様の個人情報について、流出等の事故を招かないよう、必要となる対策を講じます。<br>
+												</p>
+											</div>
+										</div>
+									</div>
+
+
+								</form>
+							</div>
+						</div>
+
+						<div class="panel tab-C">
+							<div class="p-contactForm" id="formWrap">
+								<form method="post" action="./mail.php">
+									<table class="formTable">
+
+										<tr class="tr-1">
+											<th class="Required">貴社名<span class="careful">※個人の場合は「個人」と記載ください。</span></th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="貴社名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">氏名</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required class="td-half" type="text" name="氏名" placeholder="姓" /><input class="td-half" type="text" name="氏名" placeholder="名" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">電話番号</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="電話番号" placeholder="ハイフンなし" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">メールアドレス</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input required type="text" name="メールアドレス" placeholder="xxx@xxx.xxx" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th>会社HP</th>
+										</tr>
+										<tr class="tr-2">
+											<td><input type="text" name="会社HP" placeholder="https(s)://~" /></td>
+										</tr>
+
+										<tr class="tr-1">
+											<th class="Required">お問い合わせ内容</th>
+										</tr>
+										<tr class="tr-TA2">
+											<td><textarea required name="お問い合わせ内容"></textarea></td>
+										</tr>
+
+										<tr class="tr-1 PP">
+											<th class="Required PP">個人情報の取扱いについて</th>
+										</tr>
+										<tr class="PP">
+											<td>当社の<span class="PR__link">PRIVACY POLICY</span>に同意頂ける場合は「同意する」にチェックを付けてください。</td>
+										</tr>
+										<tr class="tr-CB2 tr-2">
+											<td><input required class="checkbox" type="checkbox" name="プライバシーポリシー" /><span>同意する</span></td>
+										</tr>
+
+									</table>
+									<p class="submit" align="center">
+										<input type="submit" value="送信" />
+									</p>
+
+									<div class="modal-container">
+										<div class="modal-body">
+											<!-- 閉じるボタン -->
+
+											<!-- モーダル内のコンテンツ -->
+											<div class="modal-content --noto">
+												<div class="modal-close --noto">close</div>
+												<h2 class="p-modal-title c--sectonTitle --jacques">PRIVACY POLICY</h2>
+												<p class="p-modal__text">
+													INONは、お客様との信頼関係を損なうことのないように、お客様からお預かりする個人情報を適切に取り扱うべく、次のような方針を定め、すべての従業者に遵守させるとともに、継続的な改善努力を行うことをここに表明致します。<br>
+													・個人情報の適正な取り扱いに関する法令その他の規範を遵守いたします。<br>
+													・個人情報の取り扱いに関する規程類を明確化し、従業者に周知徹底します。また、個人情報を取り扱う委託先等に対しても、個人情報の適切な取り扱いを要請します。<br>
+													・個人情報の収集に際しては、あらかじめ収集・利用目的を告知し、お客様の同意のうえで収集します。また、同意を得た利用目的にしたがって個人情報を取り扱います。<br>
+													・当社の保有するお客様の個人情報について、お客様ご本人からの 開示、訂正、削除、利用停止の依頼をお受けして、誠意を持って対応させて頂きます。<br>
+													・当社の保有するお客様の個人情報について、流出等の事故を招かないよう、必要となる対策を講じます。<br>
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+	</main>
+
+
+	<footer class="l-footer">
+		<div class="l-footer__wrap">
+			<div class="l-footer__copyright --noto">
+				© 2021,INON ALL RIGHTS RESERVED
+			</div>
+			<div class="l-footer__logo">
+				<img src="./img/footer-logo.png" alt="">
+			</div>
+		</div>
+	</footer>
+
+	<a class="l-footer__topBtn" id="topBtn" href="#"></a>
+
+	<script>
+		(function() {
+			var scroll = new LocomotiveScroll({
+				el: document.querySelector('[data-scroll-container]'),
+				smooth: true
+			});
+		})();
+	</script>
+</body>
+
+</html>
